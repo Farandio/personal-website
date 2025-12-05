@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link"
-import { BiMapPin, BiPhone } from "react-icons/bi";
+import { BiMapPin } from "react-icons/bi";
 import { BsArrowLeft } from "react-icons/bs";
 import { MdMail, MdPhone } from "react-icons/md";
 const page = () => {
