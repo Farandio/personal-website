@@ -9,9 +9,11 @@ import {
     BiLogoLinkedin
 } from "react-icons/bi";
 import { HiArrowDown } from "react-icons/hi";
+import { HiDownload } from "react-icons/hi"; // Ikon untuk Download
 
 // --- KONSTANTA FOTO ---
 const PROFILE_IMAGE_URL = "/me.png"; 
+const CV_DOWNLOAD_LINK = "https://drive.google.com/file/d/17of8rLFptm8rGMWpZ4bjGWrySg2LG4co/view?usp=sharing"; 
 
 export default function Home() {
     return (
@@ -44,7 +46,7 @@ export default function Home() {
                         
                         {/* FOTO DIRI - KHUSUS MOBILE */}
                         {/* Ini adalah foto yang ditampilkan di mobile (small screen) di sebelah kiri */}
-                        <div className="lg:hidden w-24 h-24 sm:w-32 sm:h-40 flex-shrink-0 relative rounded-full overflow-hidden border-2 border-red-500/70 shadow-md mt-14"> 
+                        <div className="lg:hidden w-24 h-24 sm:w-32 sm:h-48 flex-shrink-0 relative rounded-full overflow-hidden border-2 border-red-500/70 shadow-md mt-14"> 
                             <Image
                                 src={PROFILE_IMAGE_URL}
                                 alt="Farandio Alkhalid"
@@ -76,12 +78,20 @@ export default function Home() {
                                 <h1 className="text-4xl font-extrabold text-center sm:text-left">Farandio Alkhalid</h1> 
                                 <h3 className="text-xl font-bold mt-2 bg-clip-text text-transparent bg-gradient-to-r from-red-700 via-red-500 to-red-300 text-center sm:text-left">Web Developer and Designer</h3>
                                 <p className="text-pretty tracking-tight mt-3 text-neutral-300 text-center sm:text-left">
-                                    Hello, it is Dio. I am a Junior Web Developer and Senior Designer with 5+ years of experience, currently working on my own projects.{" "}
+                                    Hello, it is Dio. I am a Web Developer and Designer with 5+ years of experience, currently working on my own projects.{" "}
                                     <Link href="/contact" className="bg-clip-text text-transparent bg-gradient-to-r from-red-700 via-red-500 to-red-300 font-bold opacity-90 hover:opacity-100 transition-opacity">
                                         Contact Me{" "}
                                     </Link>{" "}
                                     for freelance work anytime.
                                 </p>
+                                <Link href={CV_DOWNLOAD_LINK} passHref target="_blank" rel="noopener noreferrer" download>
+                                    <Button 
+                                        className="w-full bg-red-700 hover:bg-red-800 text-white rounded-lg mt-4 font-bold" 
+                                        size="lg" 
+                                    >
+                                        Download CV <HiDownload className="ml-2 w-5 h-5"/>
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </div>

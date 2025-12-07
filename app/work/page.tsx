@@ -7,11 +7,13 @@ import { BsArrowLeft } from "react-icons/bs";
 // Asumsi projectsData dan designProjectData diimport dengan benar
 import projectsData from "../data/projects.json";
 import designProjectData from "../data/designProjects.json"
+import { HiDownload } from "react-icons/hi"; // Ikon untuk Download
 
 const page = () => {
     // Asumsi projectsData dan designProjectData memiliki properti 'projects'/'designProjects'
     const projects = projectsData.projects; 
     const designProjects = designProjectData.designProjects;
+    const CV_DOWNLOAD_LINK = "https://drive.google.com/file/d/17of8rLFptm8rGMWpZ4bjGWrySg2LG4co/view?usp=sharing"; 
 
     return (
         <div className="min-h-screen flex items-center justify-center">
@@ -19,13 +21,25 @@ const page = () => {
             <main className="max-w-4xl m-3 md:m-8 z-50 w-full space-y-8 border rounded-xl border-gray-700/50 p-5 sm:p-10 backdrop-blur-xl bg-black/80">
 
             {/* 1. Tombol Back */}
-            <div className="relative"> 
-                <Link href="/" passHref>
-                    <Button variant="ghost" className="hover:bg-black hover:text-white rounded-full duration-300 mb-1 cursor-pointer">
-                        <BsArrowLeft className="mr-2"/> Back
-                    </Button>
-                </Link>
-            </div>
+            <div className="flex justify-between items-center mb-6">
+                    {/* Tombol Kiri: Back */}
+                    <Link href="/" passHref>
+                        {/* PERUBAHAN: Mengganti style ghost ke solid dengan border agar height-nya konsisten dengan Tombol CV */}
+                        <Button 
+                            className="bg-black border border-gray-700/90 text-white hover:bg-gray-950 rounded-full duration-300 cursor-pointer"
+                        >
+                            <BsArrowLeft className="mr-2"/> Back 
+                        </Button>
+                    </Link>
+
+                    {/* Tombol Kanan: Download CV */}
+                    <Link href={CV_DOWNLOAD_LINK} passHref target="_blank" rel="noopener noreferrer" download>
+                        {/* Tombol ini berfungsi sebagai referensi tinggi (height) */}
+                        <Button className="bg-red-700 hover:bg-red-800 text-white rounded-full duration-300 cursor-pointer">
+                            Download CV <HiDownload className="ml-2"/>
+                        </Button>
+                    </Link>
+                </div>
             
             {/* 2. Header Proyek Pengembangan: My Work */}
             <div className="flex items-center space-x-4"> 

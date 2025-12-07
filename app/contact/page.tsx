@@ -7,6 +7,7 @@ import { BiMapPin } from "react-icons/bi";
 import { BsArrowLeft } from "react-icons/bs";
 import { MdMail, MdPhone, MdWhatsapp } from "react-icons/md";
 import { RiSendPlaneFill } from "react-icons/ri"; // Ikon untuk Kirim Email
+import { HiDownload } from "react-icons/hi"; // Ikon untuk Download
 
 // --- KONSTANTA KONTAK ---
 const TARGET_EMAIL = "farandioalkhld@gmail.com"; 
@@ -14,6 +15,7 @@ const TARGET_EMAIL = "farandioalkhld@gmail.com";
 const TARGET_PHONE_WA = "6282245586754"; 
 
 const ContactPage = () => {
+    const CV_DOWNLOAD_LINK = "https://drive.google.com/file/d/17of8rLFptm8rGMWpZ4bjGWrySg2LG4co/view?usp=sharing"; 
     // 1. STATE MANAGEMENT
     const [formData, setFormData] = useState({
         name: '',
@@ -76,11 +78,25 @@ const ContactPage = () => {
         <div className="min-h-screen flex items-center justify-center">
             <main className="max-w-xl m-3 md:m-8 z-50 w-full space-y-8 border rounded-xl border-gray-700/50 p-5 sm:p-10 backdrop-blur-xl bg-black/80">
             
-            <Link href="/" passHref>
-                <Button variant="ghost" className="hover:bg-black hover:text-white rounded-full duration-300 mb-5 cursor-pointer">
-                    <BsArrowLeft className="mr-2"/> Back 
-                </Button>
-            </Link>
+            <div className="flex justify-between items-center mb-6">
+                    {/* Tombol Kiri: Back */}
+                    <Link href="/" passHref>
+                        {/* PERUBAHAN: Mengganti style ghost ke solid dengan border agar height-nya konsisten dengan Tombol CV */}
+                        <Button 
+                            className="bg-black border border-gray-700/90 text-white hover:bg-gray-950 rounded-full duration-300 cursor-pointer"
+                        >
+                            <BsArrowLeft className="mr-2"/> Back 
+                        </Button>
+                    </Link>
+
+                    {/* Tombol Kanan: Download CV */}
+                    <Link href={CV_DOWNLOAD_LINK} passHref target="_blank" rel="noopener noreferrer" download>
+                        {/* Tombol ini berfungsi sebagai referensi tinggi (height) */}
+                        <Button className="bg-red-700 hover:bg-red-800 text-white rounded-full duration-300 cursor-pointer">
+                            Download CV <HiDownload className="ml-2"/>
+                        </Button>
+                    </Link>
+                </div>
 
             <div className="space-y-6">
                 <h1 className="text-4xl bg-clip-text font-bold text-transparent bg-gradient-to-r from-red-700 via-red-500 to-red-300">Get in Touch</h1>
@@ -180,23 +196,23 @@ const ContactPage = () => {
                             </div>
 
                             {/* --- Tombol Terpisah dengan Tampilan Responsif --- */}
-                            <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                            <div className="flex gap-3 pt-2">
                                 {/* Tombol 1: WhatsApp */}
                                 <Button 
                                     type="button" 
                                     onClick={handleSendWhatsApp} 
-                                    className="w-60 text-white bg-green-700 hover:bg-green-600 font-bold"
+                                    className="flex-1 text-white bg-green-700 hover:bg-green-600 font-bold"
                                 >
-                                    <MdWhatsapp className="w-5 h-5 mr-2"/> Kirim via WhatsApp
+                                    <MdWhatsapp className="w-5 h-5 mr-2"/> Send via WhatsApp
                                 </Button>
                                 
                                 {/* Tombol 2: Email */}
                                 <Button 
                                     type="button" 
                                     onClick={handleSendEmail} 
-                                    className="w-60 text-black bg-emerald-400 hover:bg-emerald-500 font-bold"
+                                    className="flex-1 text-black bg-emerald-400 hover:bg-emerald-500 font-bold"
                                 >
-                                    <RiSendPlaneFill className="w-5 h-5 mr-2"/> Kirim via Email
+                                    <RiSendPlaneFill className="w-5 h-5 mr-2"/> Send via Email
                                 </Button>
                             </div>
                             {/* --- Akhir Tombol Terpisah --- */}
