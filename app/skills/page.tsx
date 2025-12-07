@@ -15,7 +15,7 @@ const page = () => {
             </Link>
 
             <div className="space-y-6">
-                <h1 className="text-4xl bg-clip-text font-bold text-transparent bg-gradient-to-r from-emerald-400 via-sky-300 to-blue-500">Technical Skills</h1>
+                <h1 className="text-4xl bg-clip-text font-bold text-transparent bg-gradient-to-r from-red-700 via-red-500 to-red-300">Technical Skills</h1>
 
                 <div className="space-y-8">
                     {skillsData.categories.map((category) => (
@@ -26,7 +26,7 @@ const page = () => {
                                     <div key={skill.name} className="p-4 rounded-lg border border-gray-700/50 bg-black/40">
                                         <h3 className="font-medium mb-2">{skill.name}</h3>
                                         <div className="w-full bg-gray-200 rounded-full h-2.5">
-                                            <div className="bg-emerald-400 h-2.5 rounded-full" style={{width: `${skill.level}`}}></div>
+                                            <div className="bg-red-400 h-2.5 rounded-full" style={{width: `${skill.level}`}}></div>
                                         </div>
                                     </div>
                                 ))}

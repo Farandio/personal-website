@@ -2,31 +2,35 @@
   "projects": [
     {
       "id": 1,
-      "title": "E-commerce Platform",
-      "description": "A full-stack e-commerce solution with real-time inventory management and secure payment processing.",
-      "image": "/1.png",
-      "tags": ["Next.js", "TypeScript", "Stripe", "Prisma"]
+      "title": "RaidAnalyst Website",
+      "description": "A website that provide investors to trade easily with trading signals and news sentiment.",
+      "image": "/raidanalyst.png",
+      "tags": ["React.js", "MQ5", "MySQL", "Node.js"],
+      "link": "https://github.com/Farandio/RaidAnalyst-IMPAL-01-02"
     },
     {
       "id": 2,
-      "title": "Social Media Dashboard",
-      "description": "Analytics dashboard for social media management with real-time data visualization.",
-      "image": "/2.png",
-      "tags": ["React", "D3.js", "Node.js", "MongoDB"]
+      "title": "Personal Branding Website",
+      "description": "Full source code of this website.",
+      "image": "/personalwebsite.png",
+      "tags": ["React", "Next.js", "Javascript", "Typescript", "CSS"],
+      "link": "https://github.com/Farandio/personal-website"
     },
     {
       "id": 3,
-      "title": "AI-Powered Chat Application",
-      "description": "Real-time chat application with AI integration for automated responses and content moderation.",
-      "image": "/3.png",
-      "tags": ["Next.js", "OpenAI", "WebSocket", "Tailwind"]
+      "title": "Restaurant Cashier Website",
+      "description": "Modern restaurant cashier website with dynamic content management and responsive design.",
+      "image": "/cashier.png",
+      "tags": ["Node.js", "React.js", "Sequelize", "Tailwind", "CSS", "MySQL"],
+      "link": "https://github.com/Farandio/Cashier"
     },
     {
       "id": 4,
-      "title": "Portfolio Website",
-      "description": "Modern portfolio website with dynamic content management and responsive design.",
-      "image": "/4.png",
-      "tags": ["Next.js", "Tailwind", "Framer Motion", "Sanity"]
+      "title": "Laundry Website",
+      "description": "Modern laundry website with dynamic content management and responsive design.",
+      "image": "/laundry.png",
+      "tags": ["Javascript", "Bootstrap", "HTML", "EJS", "CSS"],
+      "link": "https://github.com/Farandio/Laundry"
     }
   ]
 }

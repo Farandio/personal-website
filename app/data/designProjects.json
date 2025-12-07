@@ -1,0 +1,44 @@
+{
+  "designProjects": [
+    {
+      "id": 1,
+      "title": "WhatsApp Redesign",
+      "description": "An unofficial whatsapp redesign from me.",
+      "image": "/5.png",
+      "tags": ["Adobe Illustrator", "Figma"],
+      "link": "https://www.instagram.com/p/DRLGxwQk5V1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    },
+    {
+      "id": 2,
+      "title": "Prime Bank UI/UX",
+      "description": "Dummy financial app UI/UX design named Prime Bank.",
+      "image": "/6.png",
+      "tags": ["Adobe Illustrator", "Figma"],
+      "link": "https://www.instagram.com/p/DRMsDRAD7TG/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    },
+    {
+      "id": 3,
+      "title": "TUSBC Master Backdrop",
+      "description": "I made a backdrop design for a national level event for Telkom University Badminton Club.",
+      "image": "/7.png",
+      "tags": ["Adobe Illustrator", "Figma"],
+      "link": "https://www.instagram.com/p/DRXMDjJD4u0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    },
+    {
+      "id": 4,
+      "title": "Blora Website Redesign",
+      "description": "An unofficial blora's goverment website from me.",
+      "image": "/8.png",
+      "tags": ["Adobe Illustrator", "Figma"],
+      "link": "https://www.instagram.com/p/DRXMqP_DzBm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    },
+    {
+      "id": 5,
+      "title": "All @bakoelaptop content",
+      "description": "A design product that I have made.",
+      "image": "/9.png",
+      "tags": ["Adobe Illustrator", "Figma"],
+      "link": "https://www.instagram.com/bakoelaptop/"
+    }
+  ]
+}

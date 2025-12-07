@@ -3,10 +3,11 @@
     {
       "name": "Frontend Development",
       "skills": [
-        { "name": "React.js", "level": 95 },
-        { "name": "Next.js", "level": 90 },
-        { "name": "TypeScript", "level": 85 },
-        { "name": "Tailwind CSS", "level": 95 }
+        { "name": "React.js", "level": 80 },
+        { "name": "Next.js", "level": 60 },
+        { "name": "TypeScript", "level": 50 },
+        { "name": "Tailwind CSS", "level": 80 },
+        { "name": "Bootstrap CSS", "level": 80 }
       ]
     },
     {
@@ -14,17 +15,22 @@
       "skills": [
         { "name": "Node.js", "level": 90 },
         { "name": "Express.js", "level": 85 },
-        { "name": "MongoDB", "level": 80 },
-        { "name": "PostgreSQL", "level": 75 }
+        { "name": "MySQL", "level": 80 },
+        { "name": "MongoDB", "level": 75 },
+        { "name": "PHP", "level": 75 },
+        { "name": "Python", "level": 75 },
+        { "name": "Java", "level": 75 }
       ]
     },
     {
       "name": "Tools & Others",
       "skills": [
         { "name": "Git & GitHub", "level": 90 },
-        { "name": "Docker", "level": 80 },
-        { "name": "AWS", "level": 75 },
-        { "name": "CI/CD", "level": 85 }
+        { "name": "Postman", "level": 80 },
+        { "name": "Xampp", "level": 80 },
+        { "name": "Adobe Suite", "level": 75 },
+        { "name": "Microsoft Office", "level": 85 },
+        { "name": "Figma", "level": 85 }
       ]
     }
   ]
